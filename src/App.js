@@ -4,12 +4,10 @@ import './App.css';
 class App extends React.Component {
 
     componentDidMount() {
-      this.renderMap();
     }
 
   renderMap = () => {
       loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAsakCEzvOI-oJ_nKH9AsfceepJu57gbC0&callback=initMap")
-      window.initMap = this.initMap;
     }
 
     initMap = () => {
